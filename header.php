@@ -37,7 +37,7 @@ function con2db()
 {
 	//change the IF 
 	if(1){
-	echo "Don't  know your sql info yet.Tell me in function 'con2db()' [ 'header.php' ]";
+	echo "Don't  know your sql info yet.<br>Tell me in function 'con2db()' ['header.php']";
 	}
 	else{
 	//change1:sqlserver and sql-usernanme sql-password 
