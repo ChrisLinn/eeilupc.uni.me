@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
 <title>中国石油大学(华东)电气创新实验室预约系统</title>
 <meta content="" name="keywords">
 <meta content="" name="description">
@@ -38,9 +37,8 @@ var LANG = new Array();
 <script src="./index_files/ui.draggable.js"></script>
 <link href="./index_files/base.css" rel="stylesheet" type="text/css"><link href="./index_files/style.css" rel="stylesheet" type="text/css"></head>
 <body>
-
+<div id="login-bg">
 <?php
-
 include 'header.php';
 if(isset($_COOKIE["id"]))
 {
@@ -49,13 +47,11 @@ if(isset($_COOKIE["id"]))
 	$exec = "SELECT priority FROM user WHERE Id='$userid'";
 	$pri =mysql_result(mysql_query($exec),0);
 	if($pri==5) {Header("Location:admin.php");}
-	else{ echo "q";Header("Location:ask.php");}
+	else{Header("Location:ask.php");}
 	}
 }
 date_default_timezone_set('Asia/Shanghai');
 ?>
-
-<div id="login-bg">
     <div class="login-b" style="opacity:1;">
         <img id="login_bg" src="./index_files/body-bg2.jpg" style="display: block; width: 1366px; height: auto; margin-left: 0px; opacity: 1; visibility: visible;">
      </div>
@@ -100,12 +96,10 @@ date_default_timezone_set('Asia/Shanghai');
         </div>
       </div>
       <div id="footer" style="opacity:1;visibility:visible;margin:0;bottom:0;position:absolute;width:100%;height:50px;z-index:-1">
-            <div class="footer-wrap" style="left:50%;margin-left:-300px;position:absolute;top:0;width:560px;border:none">
-                
+            <div class="footer-wrap" style="left:50%;margin-left:-300px;position:absolute;top:0;width:560px;border:none">        
             </div>
       </div>
 </div>
 <script src="./index_files/online_check.php"></script><script src="./index_files/login.js" type="text/javascript"></script>
-
 </body>
 </html>
