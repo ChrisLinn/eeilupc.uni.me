@@ -1,4 +1,3 @@
-﻿
 <!DOCTYPE html>
 <html dir="ltr" lang="zh-CN"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="UTF-8">
@@ -44,36 +43,6 @@
 					<div class="entry-content" >
 						<!--------------------------------------------------内容是在这添加么-------------------------------------------------------------------------------------------------------------------------------->
 							
-<?php include 'header.php';
-date_default_timezone_set('Asia/Shanghai'); ?> 
-Welcome~ <?php echo $_COOKIE["id"]; ?>.<br />
-<?php
-if(!isset($_COOKIE["id"])) Header("Location:index.php");
-$id=$_COOKIE["id"];
-//$newid =$_POST["id"]; 
-$username =$_POST["username"]; 
-$password =$_POST["password"];
-if(!isset($id)||!isset($username)||!isset($password)) 
-//if(!isset($newid)||!isset($username)||!isset($password)||!isset($code)) 
-Header("Location:index.php");
-//if(!$newid||!$username||!$password)
-if(!$id||!$username||!$password)
-		echo "信息填入不完全！操作失败！";
-elseif(con2db()){
- $exec = "SELECT * FROM user WHERE Id='$id'";      //sql语句，查询用户名称！
- $result = mysql_query($exec);
- $rows = mysql_num_rows($result);
- if($rows<=0) echo "用户不存在";
- else {
- //mysql_query("UPDATE user SET Id='$newid',Name='$username',priority='$priority',password='$password' WHERE Id='$id'");
- mysql_query("UPDATE user SET Id='$id',Name='$username',password='$password' WHERE Id='$id'");
- echo "成功修改！";
- //setcookie("id", "$newid", time()+3600);
- }
-}
-?>
-<a href="/index.php">返回</a>
-
 					</div><!-- .entry-content -->
 				</article><!-- #post-0 -->
 

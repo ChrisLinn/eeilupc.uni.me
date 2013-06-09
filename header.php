@@ -57,7 +57,7 @@ function dateask($date,$day)
 {	$timearray=array(1=>"08:00-10:00",2=>"10:00-12:00",3=>"14:00-16:00",4=>"16:00-18:00",5=>"19:00-21:00",6=>"21:00-23:00");
 	$dayarray=array(1=>"一",2=>"二",3=>"三",4=>"四",5=>"五",6=>"六",7=>"日"); 
 	$seat=18;
-	echo $date."星期".$dayarray[$day];
+	echo $date."星期".$dayarray[$day]."<br/>";
 	for($time=1;$time<=6;$time++) {
  	$shijian=$timearray[$time]; 
 	$result = mysql_query("SELECT  *  FROM desk WHERE  date='$date' AND time='$shijian' ORDER BY deskid");
@@ -91,9 +91,9 @@ function dateask($date,$day)
 		  }
 		echo "</table>";
 		}
-		else echo "<br/>". $date."星期".$dayarray[$day] .$shijian."没有人预约";
+		else echo "<br/>". $date."星期".$dayarray[$day] .$shijian."没有人预约<br/>";
 	}
-	 echo "<br/><br/><br/><br/><br/><br/>";
+	 echo "<br/><br/><br/>";
 }
 
 function cbook($username,$userid,$date,$day,$time,$pri,$status,$td,$tt)
