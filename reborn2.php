@@ -21,8 +21,7 @@
 	    <p class="entry-title STYLE1">EEIL in UPC Booking Sys </p>
 	  </hgroup>
 
-						<a href="./BenOrSeattle_files/BenOrSeattle.htm">
-									<img src="./BenOrSeattle_files/trolley.jpg" width="1000" height="288" alt="">	  </a>
+						<img src="./BenOrSeattle_files/trolley.jpg" width="1000" height="288" alt="">
 			
 								<form method="get" id="searchform" action="./BenOrSeattle_files/BenOrSeattle.htm">
 	</form>

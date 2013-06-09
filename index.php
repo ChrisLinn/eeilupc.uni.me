@@ -85,7 +85,7 @@ date_default_timezone_set('Asia/Shanghai');
                         </li>
                         <li class="actionBtn"><a href="javascript:;" onclick="$(&#39;#IndexForm&#39;).submit();" class="btn-login">登录</a></li>
                         <li class="s-row1">
-                                                    <a onclick="javascript:window.open(&#39;/reg.php&#39;)">注册帐号</a>
+                                                    <a onclick="javascript:   location.href='./reg.php'">注册帐号</a>
                                                   </li>
                         
                     </ul>
