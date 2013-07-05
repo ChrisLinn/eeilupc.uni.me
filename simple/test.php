@@ -1,4 +1,4 @@
-﻿<html>
+<html>
 <script type="text/javascript"></script> 
 <head>
     <title>中国石油大学（华东）电气创新实验室预约系统</title>
@@ -22,6 +22,30 @@ if(!$date)
 elseif(con2db()){
 	$day=date('w',strtotime($date)); 
 	if($day==0)  $day=7;
+	$dayarray=array(1=>"一",2=>"二",3=>"三",4=>"四",5=>"五",6=>"六",7=>"日"); 
+	echo "
+		<table border='1' cellpadding=‘10’ align='center' >
+		<tr><th>日期及星期</th>";
+	for($i=1;$i<8;$i++)
+	{
+		
+		echo "<th>".$date-$day+$i."星期".$dayarray[$day]."</th>";
+	};		
+		echo "</tr>";
+		echo "<tr>";
+		for($i=1;$i<8;$i++)
+		{
+			$result = mysql_query("SELECT  *  FROM desk WHERE  date='$date' ");
+			$rows = mysql_num_rows($result);
+			
+			echo "<td>" . 18-$rows. "</td>";
+			
+		  }
+		echo "</tr>";
+		echo "</table>";
+			
+			//else dateask($date-$day+$i ,$i);
+	
 	dateask($date,$day);
 }
 echo "<a href='/answer.php?date=".($date-1)."'>前一天</a>............................................<a href='/answer.php?date=".($date+1)."'>后一天</a>";
