@@ -38,6 +38,23 @@ var LANG = new Array();
 <link href="./index_files/base.css" rel="stylesheet" type="text/css"><link href="./index_files/style.css" rel="stylesheet" type="text/css"></head>
 <body>
 <div id="login-bg">
+ <script type="text/javascript">
+        var Sys = {};
+        var ua = navigator.userAgent.toLowerCase();
+        if (window.ActiveXObject)
+            Sys.ie = ua.match(/msie ([\d.]+)/)[1]
+        else if (document.getBoxObjectFor)
+            Sys.firefox = ua.match(/firefox\/([\d.]+)/)[1]
+        else if (window.MessageEvent && !document.getBoxObjectFor)
+            Sys.chrome = ua.match(/chrome\/([\d.]+)/)[1]
+        else if (window.opera)
+            Sys.opera = ua.match(/opera.([\d.]+)/)[1]
+        else if (window.openDatabase)
+            Sys.safari = ua.match(/version\/([\d.]+)/)[1];
+        
+        //以下进行测试
+        if(Sys.ie == '5.0'||Sys.ie == '6.0'||Sys.ie == '7.0')  window.location.href="./simple/index.php";
+    </script>
 <?php
 include 'header.php';
 if(isset($_COOKIE["id"]))
@@ -85,7 +102,7 @@ date_default_timezone_set('Asia/Shanghai');
                         </li>
                         <li class="actionBtn"><a href="javascript:;" onclick="$(&#39;#IndexForm&#39;).submit();" class="btn-login">登录</a></li>
                         <li class="s-row1">
-                                                    <a onclick="javascript:   location.href='./reg.php'">注册帐号</a>
+                                                    <a onclick="javascript:window.open(&#39;/reg.php&#39;)">注册帐号</a>
                                                   </li>
                         
                     </ul>
