@@ -35,22 +35,16 @@ date_default_timezone_set('Asia/Shanghai');
 
 function con2db()
 {
-	//change the IF 
-	if(1){
-	echo "Don't  know your sql info yet.<br>Tell me in function 'con2db()' ['header.php']<br>";
-	}
-	else{
-	//change1:sqlserver and sql-usernanme sql-password 
-	$con = mysql_connect("SQLserver","username","password");
+	$con = mysql_connect("sql210.byethost7.com","b7_12761086","WAxiong5");
+	//$con = mysql_connect("localhost","root","root");
 	if (!$con)
 	{
 	die('Could not connect: ' . mysql_error());
 	}
-	//change2: your database
-	if(mysql_select_db("database", $con))
+	if(mysql_select_db("b7_12761086_1", $con))
+	//if(mysql_select_db("test", $con)) 
 	return 1; 
 	else return 0;
-	}
 }
 
 function dateask($date,$day)
