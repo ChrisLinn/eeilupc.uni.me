@@ -102,7 +102,7 @@ date_default_timezone_set('Asia/Shanghai');
                         </li>
                         <li class="actionBtn"><input value="登录" type="submit" class="btn-login"/></li>
                         <li class="s-row1">
-                                                    <a onclick="javascript:window.open(&#39;/reg.php&#39;)">注册帐号</a>
+                                                    <a onclick="javascript:window.location.href=&#39;/reg.php&#39;">注册帐号</a>
                                                   </li>
                         
                     </ul>
