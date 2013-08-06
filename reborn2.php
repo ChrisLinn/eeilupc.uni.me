@@ -1,10 +1,10 @@
-﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html dir="ltr" lang="zh-CN"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 <title>中国石油大学(华东)电气创新实验室预约系统</title>
 <link rel="stylesheet" type="text/css" media="all" href="./BenOrSeattle_files/style.css">
+<link rel="stylesheet" type="text/css" media="all" href="./BenOrSeattle_files/admin-bar.min.css">
 <link href="./index_files/favicon.ico?v=20130411" type="image/x-icon" rel="shortcut icon">
 <!--[if lt IE 9]>
 <script src="http://eeilupc.duapp.com/wp-content/themes/twentyeleven/js/html5.js" type="text/javascript"></script>
@@ -72,7 +72,6 @@ elseif(con2db()){
 }
 ?>
 <a href="/index.php">返回</a>
-
 					</div><!-- .entry-content -->
 				</article><!-- #post-0 -->
 
@@ -93,6 +92,9 @@ elseif(con2db()){
 </div><!-- #page -->
 
 <script type="text/javascript">SyntaxHighlighter.all();</script>
+
+
+
 <div id="leading" >
 
 		

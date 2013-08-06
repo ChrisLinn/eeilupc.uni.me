@@ -4,6 +4,7 @@
 <meta name="viewport" content="width=device-width">
 <title>中国石油大学(华东)电气创新实验室预约系统</title>
 <link rel="stylesheet" type="text/css" media="all" href="./BenOrSeattle_files/style.css">
+<link rel="stylesheet" type="text/css" media="all" href="./BenOrSeattle_files/admin-bar.min.css">
 <link href="./index_files/favicon.ico?v=20130411" type="image/x-icon" rel="shortcut icon">
 <!--[if lt IE 9]>
 <script src="http://eeilupc.duapp.com/wp-content/themes/twentyeleven/js/html5.js" type="text/javascript"></script>
@@ -82,7 +83,6 @@ else {
 <div style="position: relative;right: 400px">
  	<a  href="/index.php">返回</a>
 </div>
-
 					</div><!-- .entry-content -->
 				</article><!-- #post-0 -->
 
@@ -103,6 +103,9 @@ else {
 </div><!-- #page -->
 
 <script type="text/javascript">SyntaxHighlighter.all();</script>
+
+
+
 <div id="leading" >
 
 		
