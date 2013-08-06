@@ -92,35 +92,15 @@ echo $status =mysql_result(mysql_query($exec),0);
 
 		
 		<div id="wpadminbar" class="nojq nojs" role="navigation">
-			<a class="screen-reader-shortcut" href="http://localhost/wordpress/#wp-toolbar" tabindex="1">跳至工具栏</a>
-			<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="顶部导航工具栏。" tabindex="0">
-				<ul id="wp-admin-bar-root-default" class="ab-top-menu">
-		<li id="wp-admin-bar-wp-logo" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://localhost/wordpress/wp-admin/about.php" title="关于 WordPress"><span class="ab-icon"></span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-wp-logo-default" class="ab-submenu">
-		<li id="wp-admin-bar-about"><a class="ab-item" href="http://localhost/wordpress/wp-admin/about.php">关于 WordPress</a>		</li></ul><ul id="wp-admin-bar-wp-logo-external" class="ab-sub-secondary ab-submenu">
-		<li id="wp-admin-bar-wporg"><a class="ab-item" href="http://cn.wordpress.org/">WordPress.org</a>		</li>
-		<li id="wp-admin-bar-documentation"><a class="ab-item" href="http://codex.wordpress.org/zh-cn:Main_Page">文档</a>		</li>
-		<li id="wp-admin-bar-support-forums"><a class="ab-item" href="http://zh-cn.forums.wordpress.org/">支持论坛</a>		</li>
-		<li id="wp-admin-bar-feedback"><a class="ab-item" href="http://zh-cn.forums.wordpress.org/forum/suggestions">反馈</a>		</li></ul></div>		</li>
-		<li id="wp-admin-bar-site-name" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://localhost/wordpress/wp-admin/">BenOrSeattle</a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-site-name-default" class="ab-submenu">
-		<li id="wp-admin-bar-dashboard"><a class="ab-item" href="http://localhost/wordpress/wp-admin/">仪表盘</a>		</li></ul><ul id="wp-admin-bar-appearance" class="ab-submenu">
-		<li id="wp-admin-bar-themes"><a class="ab-item" href="http://localhost/wordpress/wp-admin/themes.php">主题</a>		</li>
-		<li id="wp-admin-bar-customize" class="hide-if-no-customize"><a class="ab-item" href="http://localhost/wordpress/wp-admin/customize.php?url=http%3A%2F%2Flocalhost%2Fwordpress%2F">自定义</a>		</li>
-		<li id="wp-admin-bar-widgets"><a class="ab-item" href="http://localhost/wordpress/wp-admin/widgets.php">小工具</a>		</li>
-		<li id="wp-admin-bar-menus"><a class="ab-item" href="http://localhost/wordpress/wp-admin/nav-menus.php">菜单</a>		</li>
-		<li id="wp-admin-bar-background"><a class="ab-item" href="http://localhost/wordpress/wp-admin/themes.php?page=custom-background">背景</a>		</li>
-		<li id="wp-admin-bar-header"><a class="ab-item" href="http://localhost/wordpress/wp-admin/themes.php?page=custom-header">顶部</a>		</li></ul></div>		</li>
-		<li id="wp-admin-bar-comments"><a class="ab-item" href="http://localhost/wordpress/wp-admin/edit-comments.php" title="1 条评论待审"><span class="ab-icon"></span><span id="ab-awaiting-mod" class="ab-label awaiting-mod pending-count count-1">1</span></a>		</li>
-		<li id="wp-admin-bar-new-content" class="menupop"><a class="ab-item" aria-haspopup="true" href="http://localhost/wordpress/wp-admin/post-new.php" title="添加"><span class="ab-icon"></span><span class="ab-label">新建</span></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-new-content-default" class="ab-submenu">
-		<li id="wp-admin-bar-new-post"><a class="ab-item" href="http://localhost/wordpress/wp-admin/post-new.php">文章</a>		</li>
-		<li id="wp-admin-bar-new-media"><a class="ab-item" href="http://localhost/wordpress/wp-admin/media-new.php">媒体</a>		</li>
-		<li id="wp-admin-bar-new-page"><a class="ab-item" href="http://localhost/wordpress/wp-admin/post-new.php?post_type=page">页面</a>		</li>
-		<li id="wp-admin-bar-new-user"><a class="ab-item" href="http://localhost/wordpress/wp-admin/user-new.php">用户</a>		</li></ul></div>		</li></ul><ul id="wp-admin-bar-top-secondary" class="ab-top-secondary ab-top-menu">
-		<li id="wp-admin-bar-search" class="admin-bar-search"><div class="ab-item ab-empty-item" tabindex="-1"><form action="./BenOrSeattle_files/BenOrSeattle.htm" method="get" id="adminbarsearch"><input class="adminbar-input" name="s" id="adminbar-search" type="text" value="" maxlength="150"><input type="submit" class="adminbar-button" value="搜索"></form></div>		</li>
-		<li id="wp-admin-bar-my-account" class="menupop with-avatar"><a class="ab-item" aria-haspopup="true" href="http://localhost/wordpress/wp-admin/profile.php" title="我的帐户">您好，lollol<img alt="" src="http://1.gravatar.com/avatar/9687d6bd9ab6d4086051c1cf647fc95f?s=16&d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D16&r=G" class="avatar avatar-16 photo" height="16" width="16"></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-user-actions" class="ab-submenu">
-		<li id="wp-admin-bar-user-info"><a class="ab-item" tabindex="-1" href="http://localhost/wordpress/wp-admin/profile.php"><img alt="" src="http://1.gravatar.com/avatar/9687d6bd9ab6d4086051c1cf647fc95f?s=64&d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D64&r=G" class="avatar avatar-64 photo" height="64" width="64"><span class="display-name">lollol</span></a>		</li>
-		<li id="wp-admin-bar-edit-profile"><a class="ab-item" href="http://localhost/wordpress/wp-admin/profile.php">编辑我的个人资料</a>		</li>
-		<li id="wp-admin-bar-logout"><a class="ab-item" href="http://localhost/wordpress/wp-login.php?action=logout&_wpnonce=6efb4f2765">登出</a>		</li></ul></div>		</li></ul>			</div>
-			<a class="screen-reader-shortcut" href="http://localhost/wordpress/wp-login.php?action=logout&_wpnonce=6efb4f2765">登出</a>
+		<a class="screen-reader-shortcut" href="http://localhost/wordpress/#wp-toolbar" tabindex="1">跳至工具栏</a>
+		<div class="quicklinks" id="wp-toolbar" role="navigation" aria-label="顶部导航工具栏。" tabindex="0">
+		<ul id="wp-admin-bar-top-secondary" class="ab-top-secondary ab-top-menu">
+		<li id="wp-admin-bar-my-account" class="menupop with-avatar"><a class="ab-item" aria-haspopup="true"  title="我的帐户">您好，<?php echo $_COOKIE["id"]; ?><img alt="" src="./BenOrSeattle_files/noavatar_small.gif" class="avatar avatar-16 photo" height="16" width="16"></a><div class="ab-sub-wrapper"><ul id="wp-admin-bar-user-actions" class="ab-submenu">
+		<li id="wp-admin-bar-user-info"><a class="ab-item" tabindex="-1" ><img alt="" src="./BenOrSeattle_files/noavatar_middle.gif" class="avatar avatar-64 photo" height="64" width="64"><span class="display-name"><?php showmyname() ?>></span></a>		</li>
+		<li id="wp-admin-bar-edit-profile"><a ><?php showmysta() ?></a>		</li>
+		<li id="wp-admin-bar-edit-profile"><a class="ab-item" href="/mybooking.php">我的预约</a>		</li>
+		<li id="wp-admin-bar-edit-profile"><a class="ab-item" href="/reborn.php">修改个人信息</a>		</li>
+		<li id="wp-admin-bar-logout"><a class="ab-item" href="/logout.php">注销</a>		</li></ul></div>		</li></ul>			</div>
 		</div>
 		</div>
 </body></html>

@@ -150,4 +150,22 @@ function cbook($username,$userid,$date,$day,$time,$pri,$status,$td,$tt)
 	else echo "<br/>失败！没有权限预约这个时间段！";
 	}
 }
+function showmyname()
+{
+	$userid =$_COOKIE["id"];
+	if(con2db()){
+		$exec = "SELECT Name FROM user WHERE Id='$userid'";
+		$username =mysql_result(mysql_query($exec),0);
+		echo $username;
+	}
+}
+function showmysta()
+{
+	$userid =$_COOKIE["id"];
+	if(con2db()){
+		$exec = "SELECT status FROM user WHERE Id='$userid'";
+		$status =mysql_result(mysql_query($exec),0);
+		echo $status;
+	}
+}
 ?>
