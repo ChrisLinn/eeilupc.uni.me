@@ -1,0 +1,120 @@
+html {
+	width: 100%; height: 100%; overflow: hidden;
+}
+body {
+	width: 100%; height: 100%; overflow: hidden;
+}
+a.notetitle:link {
+	color: rgb(54, 108, 163); text-decoration: none;
+}
+a.notetitle:visited {
+	color: rgb(54, 108, 163); text-decoration: none;
+}
+a.notetitle:hover {
+	color: rgb(255, 0, 0); text-decoration: none;
+}
+a.notetitle:active {
+	color: rgb(54, 108, 163); text-decoration: none;
+}
+.table_left {
+	border: 0px currentColor; width: 200px; cursor: default;
+}
+.table_title {
+	background: url("../images/table/top_title.gif") no-repeat; height: 29px; color: rgb(255, 255, 255); line-height: 29px; padding-top: 1px; padding-left: 10px; font-size: 14px; font-weight: bold; float: left;
+}
+.slide {
+	background: url("../images/slide.gif") no-repeat left top; width: 15px; height: 15px; overflow: hidden; margin-top: 8px; float: right;
+}
+.list {
+	height: 90px; margin-top: 10px;
+}
+.list li {
+	border: 1px solid rgb(255, 255, 255); line-height: 20px; padding-left: 10px;
+}
+.list li img {
+	margin-top: 4px; margin-bottom: 4px;
+}
+.listhover {
+	background: rgb(238, 238, 238) !important; border: 1px solid rgb(204, 204, 204) !important;
+}
+.list a:hover {
+	color: rgb(255, 0, 0); cursor: pointer;
+}
+#top_bar li {
+	height: 25px; color: rgb(54, 108, 163); line-height: 25px; padding-left: 5px;
+}
+#top_bar li .titlediv {
+	width: 180px; overflow: hidden; float: left; white-space: nowrap; text-overflow: ellipsis;
+}
+#noteview {
+	left: 320px; top: 120px; width: 400px; height: 450px; display: none; position: fixed; z-index: 20;
+}
+#noteview .table_title {
+	background: url("../images/top_title.gif") no-repeat; width: 150px; height: 29px; line-height: 29px; padding-top: 1px; padding-left: 12px; cursor: default;
+}
+#noteview .closediv {
+	background: url("../images/close.gif") no-repeat left top; top: 9px; width: 15px; height: 15px; right: 11px; overflow: hidden; position: absolute;
+}
+#nextNote {
+	top: 50px; right: 25px; position: absolute; cursor: pointer;
+}
+#notecontent {
+	padding: 0px 0px 0px 2px; width: 380px; height: 390px; color: rgb(51, 51, 51); overflow: auto; margin-top: 10px;
+}
+#notecontent div.loading {
+	color: rgb(51, 51, 51);
+}
+* html #noteview {
+	position: absolute;
+}
+#wraper {
+	background: rgb(255, 255, 255); left: 0px; top: 0px; width: 100%; height: 100%; overflow: hidden; position: absolute;
+}
+#main_top {
+	background: url("../images/topbg.gif") repeat-x rgb(255, 255, 255); left: 0px; top: 0px; width: 100%; height: 80px; overflow: hidden; position: absolute; z-index: 10;
+}
+#top_logo {
+	background: url("../images/top.jpg") no-repeat; left: 0px; top: 0px; width: 450px; height: 80px; position: absolute; z-index: 15;
+}
+#top_bar {
+	background: url("../images/topbar.jpg") no-repeat; top: 50px; width: 320px; height: 26px; right: 20px; overflow: hidden; position: absolute;
+}
+#main_left {
+	background: rgb(222, 237, 245); left: 0px; top: 80px; width: 200px; height: 100%; overflow: hidden; position: absolute; z-index: 8;
+}
+#main_right {
+	background: rgb(255, 255, 255); left: 200px; top: 80px; right: 0px; bottom: 0px; overflow: hidden; position: absolute; z-index: 9;
+}
+#right_1 {
+	background: url("../images/middlebg.gif") repeat-y rgb(255, 255, 255); left: 0px; top: 0px; width: 10px; bottom: 0px; overflow: hidden; position: absolute; z-index: 10;
+}
+#right_2 {
+	background: rgb(255, 255, 255); left: 10px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; position: absolute; z-index: 10;
+}
+#main_Frame {
+	width: 100%; height: 100%; position: absolute;
+}
+#middle_img {
+	margin-top: 200px; margin-left: 0px; cursor: pointer;
+}
+#main_animate {
+	border: 1px dashed rgb(19, 83, 125); display: none; position: absolute; z-index: 1000;
+}
+#toTop {
+	width: 60px; height: 22px; right: 20px; bottom: 0px; filter: alpha(opacity=60); position: fixed; z-index: 100; cursor: pointer; opacity: 0.6;
+}
+* html #main_right {
+	top: 0px; height: 100%;
+}
+* html #right_1 {
+	height: 100%; margin-top: 80px; float: left; position: static;
+}
+* html #right_2 {
+	height: 100%; margin-top: 80px; float: left; position: static;
+}
+* html #main_Frame {
+	position: static;
+}
+* html #toTop {
+	position: absolute;
+}

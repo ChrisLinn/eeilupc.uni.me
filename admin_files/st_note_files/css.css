@@ -1,0 +1,57 @@
+body {
+	overflow-x: hidden; overflow-y: auto;
+}
+.png {
+	behavior: url(images/png.htc);
+}
+.table_float {
+	border: 0px currentColor; width: 100%;
+}
+.table_title {
+	background: url("../images/table/top_title.gif") no-repeat; height: 29px; color: rgb(255, 255, 255); line-height: 29px; padding-top: 1px; padding-left: 10px; font-size: 14px; font-weight: bold; float: left; cursor: default;
+}
+.table_maindiv {
+	width: 100%; padding-top: 10px;
+}
+.table_body {
+	border: 0px currentColor; width: 100%; background-color: rgb(204, 204, 204);
+}
+.table_body td {
+	background: rgb(255, 255, 255); height: 25px; line-height: 25px;
+}
+.table_body td.bodytitle {
+	background: url("../images/table/topbg.jpg") repeat-x; height: 25px; color: rgb(85, 85, 85); line-height: 25px; font-weight: bold;
+}
+.tdleft {
+	width: 120px; height: 25px; text-align: right; font-weight: bold; vertical-align: bottom;
+}
+.tdleft1 {
+	width: 100px; height: 25px; text-align: right; font-weight: bold; vertical-align: bottom;
+}
+.tdright {
+	text-align: left; padding-left: 10px; vertical-align: bottom;
+}
+.input1 {
+	width: 150px; height: 14px;
+}
+.input2 {
+	border-width: 0px 0px 1px; border-style: none none solid; border-color: currentColor currentColor rgb(102, 102, 102); width: 100px; height: 14px; text-align: center;
+}
+.input3 {
+	width: 100px; height: 14px; color: rgb(102, 102, 102);
+}
+.button1 {
+	border: 0px currentColor; width: 60px; height: 21px; color: rgb(51, 51, 51); padding-top: 2px; cursor: pointer; background-image: url("../images/button.gif");
+}
+.button2 {
+	border: 0px currentColor; width: 120px; height: 21px; color: rgb(51, 51, 51); padding-top: 2px; cursor: pointer; background-image: url("../images/button2.gif");
+}
+.closediv {
+	background: url("../images/close.gif") no-repeat left top; width: 15px; height: 15px; overflow: hidden; margin-top: 9px; float: right;
+}
+.list {
+	height: 22px; text-align: left; padding-left: 5px;
+}
+.span {
+	color: rgb(102, 102, 102);
+}
