@@ -64,8 +64,8 @@ function dateask($date,$day)
 	$rows = mysql_num_rows($result);
 	if($rows>0) {	
 	echo "<br/>". $date."星期".$dayarray[$day] .$shijian."还剩".($seat-$rows)."个位置";
-	echo "
-		<table border='1' cellpadding=‘10’ align='center' >
+	echo "<blockquote>
+		<table border='1' cellpadding=‘10’ align='center' style='font-style:normal;'>
 		<tr>
 		<th>桌号</th> 
 		<th>用户</th>
@@ -89,7 +89,7 @@ function dateask($date,$day)
 			echo "<td>" . $row['status'] . "</td>";
 			echo "</tr>";
 		  }
-		echo "</table>";
+		echo "</table></blockquote>";
 		}
 		else echo "<br/>". $date."星期".$dayarray[$day] .$shijian."没有人预约<br/>";
 	}
@@ -122,8 +122,8 @@ function cbook($username,$userid,$date,$day,$time,$pri,$status,$td,$tt)
 	{
 	mysql_query("INSERT INTO desk(deskid,username,userid,date,day,time,tt,status) VALUES ( '$deskid','$username','$userid','$date','$dayarray[$day]','$time', '$tt','$status')");
 	echo "<br/>成功添加！";
-	echo "
-		<table border='1' cellpadding=‘10’  align='center'>
+	echo "<blockquote>
+		<table border='1' cellpadding=‘10’  align='center' style='font-style:normal;'>
 		
 		<tr>
 		<th>桌号</th> 
@@ -145,7 +145,7 @@ function cbook($username,$userid,$date,$day,$time,$pri,$status,$td,$tt)
 			echo "<td>" . $tt . "</td>";
 			echo "<td>" . $status . "</td>";
 			echo "</tr>";		  
-		echo "</table>";
+		echo "</table></blockquote>";
 	}
 	else echo "<br/>失败！没有权限预约这个时间段！";
 	}

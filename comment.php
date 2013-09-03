@@ -39,8 +39,9 @@
 					<header class="entry-header">
 						
 					</header><!-- .entry-header -->
-
-					<div class="entry-content" >
+						可以以游客身份评论，也可以使用社交网站帐号登录评论
+					<blockquote>
+						<div class="entry-content" style="font-style:normal;">
 						<!--------------------------------------------------内容是在这添加么-------------------------------------------------------------------------------------------------------------------------------->
 								<?php
 									include 'header.php';
@@ -48,11 +49,12 @@
 									date_default_timezone_set('Asia/Shanghai');
 									$userid =$_COOKIE["id"];
 									if(con2db()){
-									$exec = "SELECT status FROM user WHERE Id='$userid'";
-									
+									$exec = "SELECT status FROM user WHERE Id='$userid'";								
 									}
 								?>
+								
 						<!-- Duoshuo Comment BEGIN -->
+						
 							<div class="ds-thread"></div>
 							
 							<script type="text/javascript" >
@@ -68,6 +70,7 @@
 							</script>
 						<!-- Duoshuo Comment END -->
 					</div><!-- .entry-content -->
+				</blockquote>
 				</article><!-- #post-0 -->
 
 			
